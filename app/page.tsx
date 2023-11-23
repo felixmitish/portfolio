@@ -1,10 +1,9 @@
 import Image from "next/image";
-
+import { Bananas } from "./geometries";
 export default function Home() {
-  const words = "hello felix";
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      {words}
+    <main className="relative min-h-screen w-screen h-screen">
+      <Bananas />
     </main>
   );
 }
