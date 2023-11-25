@@ -114,7 +114,7 @@ export function Bananas({
   return (
     // No need for antialias (faster), dpr clamps the resolution to 1.5 (also faster than full resolution)
     <Canvas
-      className="min-h-screen min-w-full w-full h-full bg-pr absolute"
+      className="absolute min-h-screen min-w-full w-full h-full bg-pr"
       gl={{ antialias: false }}
       dpr={[1, 1.5]}
       camera={{ position: [0, 0, 10], fov: 20, near: 0.01, far: depth + 15 }}
