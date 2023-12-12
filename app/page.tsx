@@ -3,7 +3,7 @@ import { Bananas } from "./geometries";
 
 export default function Home() {
   return (
-    <main className="relative w-screen overflow-hidden h-[1500px]">
+    <main className="relative w-screen overflow-hidden h-[px]">
       <Bananas />
       {/* Here I want to add my photo on top of the page, title, name, and short description */}
       <div className="absolute mt-4 flex flex-col top-0 left-0 w-screen justify-start items-center space-y-4 pt-8 overflow-y-auto">
@@ -27,7 +27,7 @@ export default function Home() {
           Here are some of my projects
         </h2>
       </div>
-      <div className=" absolute mt-4 top-0 flex  flex-col left-5 w-screen space-y-4 pt-[560px] items-start overflow-y-auto">
+      <div className=" absolute mt-4 top-0 flex  flex-col left-5 w-screen space-y-4 pt-[560px] items-start overflow-y-auto h-full">
         <h3 className="text-3xl font-bold text-white left-20 pl-[90px]">
           Ecology monitor of Nice
         </h3>
@@ -61,6 +61,51 @@ export default function Home() {
             <li>PixelLib</li>
           </ul>
         </p>
+      </div>
+      <div className=" absolute mt-4 top-0 flex  flex-col right-6 w-screen space-y-4 pt-[1200px] items-end overflow-y-auto h-full">
+        <h3 className="text-3xl font-bold text-white left-20 pr-[35px]">
+          Web site portfolio of a bartender
+        </h3>
+        <div className="backdrop-blur-md bg-white/20 rounded-md p-5">
+          <Image
+            src="/portfoliobartender.png"
+            alt="Picture of website ecology monitor of Nice"
+            width={500}
+            height={500}
+            className="rounded-md"
+            style={{ marginLeft: "0" }} // Inline style to reset any potential margin
+          />
+        </div>
+        <p className=" absolute text-xl text-white p-9 text-start items-start max-w-xl right-[520px]">
+          <p>
+            Welcome to my bartender portfolio, where mixology meets
+            craftsmanship. With a passion for creating memorable experiences, I
+            bring expertise in mixology to elevate events and gatherings. As a
+            seasoned bartender specializing in bar catering, I craft bespoke
+            cocktails while ensuring a seamless and delightful drinking
+            experience for your guests.
+          </p>
+          <p>Made using:</p>
+          <ul>
+            <li> -Next.js</li>
+            <li> -Shadcn/ui</li>
+            <li> -MDN</li>
+            <li> -Tailwind CSS</li>
+          </ul>
+        </p>
+      </div>
+      <div className=" absolute mt-4 top-0 flex  flex-col p-4 w-screen space-y-4 pt-[2100px] items-end overflow-y-auto h-full">
+        <h4 className="text-xl font-bold text-white text-center ">
+          Hello! I&apos;m a web developer and programmer experienced in crafting
+          functional and visually appealing websites. I specialize in sites of
+          any complexity – from simple landing pages to intricate e-commerce
+          platforms and corporate portals. Additionally, I have expertise in
+          leveraging artificial intelligence for processing large datasets. My
+          aim is to provide functional, uniquely designed websites tailored to
+          your needs. Available for short-term and long-term projects. Contact
+          information will be available below. Let&apos;s turn your concepts
+          into digital reality together!
+        </h4>
       </div>
     </main>
   );
