@@ -3,7 +3,7 @@ import { Bananas } from "./geometries";
 
 export default function Home() {
   return (
-    <main className="relative w-screen overflow-hidden h-[px]">
+    <main className="relative w-screen overflow-hidden h-[2500px]">
       <Bananas />
       {/* Here I want to add my photo on top of the page, title, name, and short description */}
       <div className="absolute mt-4 flex flex-col top-0 left-0 w-screen justify-start items-center space-y-4 pt-8 overflow-y-auto">
